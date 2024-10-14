@@ -10,11 +10,13 @@ app.use(bodyParser.json());
 
 // MySQL Database Connection
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'phpmyadmin',   // MySQL username
-    password: 'Razaq176730', // MySQL password
-    database: 'elitegame' // Your database name
+    host: 'elitegamesmysql.cjsqmcu0mufq.us-east-1.rds.amazonaws.com',
+    user: 'Elitegame3000',   // MySQL username
+    password: 'Elitegame3000', // MySQL password
+    database: 'Elitegame' // Your database name CREATE DATABASE Elitegame;
 });
+
+
 
 // Connect to the Database
 db.connect((err) => {
